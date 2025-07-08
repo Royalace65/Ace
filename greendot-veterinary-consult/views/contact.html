@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Greendot Veterinary Consult</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Leaflet CSS for map - If using Leaflet -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-logo">Greendot Vet Consult</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="shop.html" class="nav-link">Pet Shop</a></li>
+                    <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact Us</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item auth-links"><a href="login.html" class="nav-link">Login</a></li>
+                    <li class="nav-item auth-links"><a href="signup.html" class="nav-link">Sign Up</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Get In Touch With Us</h1>
+
+        <section id="contact-details" class="container content-section">
+            <div class="contact-grid">
+                <div class="contact-info-block">
+                    <h2>Our Clinic</h2>
+                    <p><strong>Greendot Veterinary Consult</strong></p>
+                    <p><img src="/images/icon-location.svg" alt="Location" class="contact-icon"> 123 Vet Street, GRA, Benin City, Edo State, Nigeria</p>
+                    <p><img src="/images/icon-phone.svg" alt="Phone" class="contact-icon"> +234 123 456 7890</p>
+                    <p><img src="/images/icon-email.svg" alt="Email" class="contact-icon"> info@greendotvet.ng</p>
+
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday: 10:00 AM - 4:00 PM</p>
+                    <p>Sunday & Public Holidays: Closed (Emergency services may be available - please call)</p>
+                </div>
+
+                <div id="map-placeholder" class="contact-map-block">
+                    <!-- Placeholder for Google Maps or Leaflet Map -->
+                    <p style="text-align:center; padding-top:80px;">[Interactive Map of Benin City Clinic Location Here]</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63419.20001237801!2d5.596792551670377!3d6.331784612986775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d1ae4988c933%3A0x8a85976e7ea651e7!2sBenin%20City%2C%20Edo%20State%2C%20Nigeria!5e0!3m2!1sen!2sgh!4v1678886033777!5m2!1sen!2sgh"
+                        width="100%"
+                        height="350"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Clinic Location in Benin City">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="appointment" class="container content-section alt-bg">
+            <h2>Send Us a Message or Request an Appointment</h2>
+            <form id="contactForm">
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div>
+                    <label for="message">Your Message / Appointment Request Details:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h4>Greendot Veterinary Consult</h4>
+                    <p>Providing expert and compassionate pet care in Benin City.</p>
+                    <div class="social-icons">
+                        <a href="#">[Facebook]</a>
+                        <a href="#">[Instagram]</a>
+                        <a href="#">[Twitter/X]</a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info-footer"> <!-- Renamed to avoid conflict with main content -->
+                    <h4>Contact Us</h4>
+                    <p>123 Vet Street, Benin City, Nigeria</p>
+                    <p>Email: info@greendotvet.ng</p>
+                    <p>Phone: +234 123 456 7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Greendot Veterinary Consult. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <!-- Leaflet JS for map - If using Leaflet -->
+    <!-- <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script> -->
+    <!-- <script>
+        // Basic Leaflet Map Initialization (Example)
+        // if (document.getElementById('map-placeholder')) {
+        //    var map = L.map('map-placeholder').setView([6.335, 5.603], 13); // Benin City Coords
+        //    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        //        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        //    }).addTo(map);
+        //    L.marker([6.335, 5.603]).addTo(map) // Placeholder marker
+        //        .bindPopup('Greendot Veterinary Consult (Approx. Location)')
+        //        .openPopup();
+        // }
+    </script> -->
+</body>
+</html>

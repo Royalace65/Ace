@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop - Greendot Veterinary Consult</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-logo">Greendot Vet Consult</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="shop.html" class="nav-link active">Pet Shop</a></li>
+                    <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item auth-links"><a href="login.html" class="nav-link">Login</a></li>
+                    <li class="nav-item auth-links"><a href="signup.html" class="nav-link">Sign Up</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to Our Pet Shop</h1>
+
+        <section id="shop-intro" class="container content-section">
+            <p>
+                Find everything you need for your furry, feathered, or scaled friend in our curated Pet Shop.
+                We stock high-quality food, fun accessories, essential grooming items, and more, all recommended by our veterinary team.
+            </p>
+        </section>
+
+        <section id="product-categories" class="container content-section alt-bg">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <img src="/images/cat-food-placeholder.jpg" alt="Pet Food" class="category-image-placeholder">
+                    <h3>Pet Food</h3>
+                    <p>Nutritious options for dogs, cats, and other small pets.</p>
+                    <a href="#food-section" class="btn btn-outline category-link" data-category="Food">View Food</a>
+                </div>
+                <div class="category-item">
+                    <img src="/images/cat-accessories-placeholder.jpg" alt="Pet Accessories" class="category-image-placeholder">
+                    <h3>Accessories</h3>
+                    <p>Collars, leashes, toys, beds, and more.</p>
+                    <a href="#accessories-section" class="btn btn-outline category-link" data-category="Accessories">View Accessories</a>
+                </div>
+                <div class="category-item">
+                    <img src="/images/cat-grooming-placeholder.jpg" alt="Grooming Items" class="category-image-placeholder">
+                    <h3>Grooming Items</h3>
+                    <p>Shampoos, brushes, dental care, and flea/tick prevention.</p>
+                    <a href="#grooming-section" class="btn btn-outline category-link" data-category="Grooming">View Grooming</a>
+                </div>
+                 <div class="category-item">
+                    <img src="/images/cat-treats-placeholder.jpg" alt="Pet Treats" class="category-image-placeholder">
+                    <h3>Healthy Treats</h3>
+                    <p>Delicious and healthy treats for training and rewards.</p>
+                    <a href="#treats-section" class="btn btn-outline category-link" data-category="Treats">View Treats</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Listings Area - To be populated by JavaScript -->
+        <section id="all-products-section" class="container content-section product-listing">
+            <h2>All Products</h2>
+            <div id="product-grid-all" class="product-grid">
+                <!-- Products will be dynamically inserted here by JavaScript -->
+                <p class="loading-message">Loading products...</p>
+            </div>
+        </section>
+
+        <!-- Individual Category Sections (Optional - can filter dynamically from "All Products" or load separately) -->
+        <section id="food-section" class="container content-section product-listing alt-bg category-product-section" style="display: none;">
+            <h2>Pet Food Selection</h2>
+            <div id="product-grid-food" class="product-grid">
+                <!-- Food products will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="accessories-section" class="container content-section product-listing category-product-section" style="display: none;">
+            <h2>Pet Accessories</h2>
+            <div id="product-grid-accessories" class="product-grid">
+                <!-- Accessories products will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="grooming-section" class="container content-section product-listing alt-bg category-product-section" style="display: none;">
+            <h2>Grooming Supplies</h2>
+            <div id="product-grid-grooming" class="product-grid">
+                <!-- Grooming products will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <section id="treats-section" class="container content-section product-listing category-product-section" style="display: none;">
+            <h2>Healthy Treats</h2>
+            <div id="product-grid-treats" class="product-grid">
+                <!-- Treats products will be dynamically inserted here -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h4>Greendot Veterinary Consult</h4>
+                    <p>Providing expert and compassionate pet care in Benin City.</p>
+                    <div class="social-icons">
+                        <a href="#">[Facebook]</a>
+                        <a href="#">[Instagram]</a>
+                        <a href="#">[Twitter/X]</a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info-footer">
+                    <h4>Contact Us</h4>
+                    <p>123 Vet Street, Benin City, Nigeria</p>
+                    <p>Email: info@greendotvet.ng</p>
+                    <p>Phone: +234 123 456 7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Greendot Veterinary Consult. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <!-- Consider a separate shop.js if logic becomes complex -->
+    <!-- <script src="/js/shop.js"></script> -->
+</body>
+</html>

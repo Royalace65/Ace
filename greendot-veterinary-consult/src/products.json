@@ -1,0 +1,110 @@
+[
+    {
+        "id": "prod001",
+        "name": "Premium Adult Dog Food (Chicken & Rice)",
+        "category": "Food",
+        "price": "₦15,500",
+        "description": "Complete and balanced nutrition for adult dogs, made with real chicken and wholesome rice. Supports healthy digestion and a shiny coat.",
+        "imageUrl": "/images/products/default-product.jpg",
+        "stock": 50
+    },
+    {
+        "id": "prod002",
+        "name": "Grain-Free Cat Food (Salmon)",
+        "category": "Food",
+        "price": "₦12,000",
+        "description": "Delicious grain-free formula for cats with sensitive stomachs, featuring real salmon as the first ingredient.",
+        "imageUrl": "/images/products/default-product.jpg",
+        "stock": 40
+    },
+    {
+        "id": "prod003",
+        "name": "Puppy Growth Formula (Milk Replacer)",
+        "category": "Food",
+        "price": "₦10,500",
+        "description": "Nutrient-rich milk replacer for growing puppies, fortified with vitamins and minerals for healthy development.",
+        "imageUrl": "/images/products/default-product.jpg",
+        "stock": 30
+    },
+    {
+        "id": "prod004",
+        "name": "Durable Nylon Dog Leash (Red, Large)",
+        "category": "Accessories",
+        "price": "₦4,500",
+        "description": "Strong and durable nylon leash for large dogs, with a comfortable handle and secure clasp. Length: 6ft.",
+        "imageUrl": "/images/products/default-product.jpg",
+        "stock": 60
+    },
+    {
+        "id": "prod005",
+        "name": "Interactive Feather Wand Cat Toy",
+        "category": "Accessories",
+        "price": "₦2,200",
+        "description": "Engaging feather wand toy to stimulate your cat's natural hunting instincts and provide hours of fun.",
+        "imageUrl": "/images/products/default-product.jpg",
+        "stock": 75
+    },
+    {
+        "id": "prod006",
+        "name": "Cozy Pet Bed (Medium, Grey)",
+        "category": "Accessories",
+        "price": "₦8,000",
+        "description": "Soft and comfortable plush bed for medium-sized pets, providing a warm and secure resting place.",
+        "imageUrl": "/images/products/default-product.jpg",
+        "stock": 25
+    },
+    {
+        "id": "prod007",
+        "name": "Hypoallergenic Pet Shampoo (Oatmeal)",
+        "category": "Grooming",
+        "price": "₦6,500",
+        "description": "Gentle, soap-free hypoallergenic shampoo with oatmeal and aloe vera to soothe sensitive skin. 500ml.",
+        "imageUrl": "/images/products/default-product.jpg",
+        "stock": 35
+    },
+    {
+        "id": "prod008",
+        "name": "Professional Pet Nail Clippers",
+        "category": "Grooming",
+        "price": "₦3,800",
+        "description": "Sharp, stainless steel nail clippers with a safety guard to prevent over-cutting. Suitable for dogs and cats.",
+        "imageUrl": "/images/products/default-product.jpg",
+        "stock": 45
+    },
+    {
+        "id": "prod009",
+        "name": "Dental Care Chews for Dogs (Small Breed)",
+        "category": "Treats",
+        "price": "₦3,000",
+        "description": "Tasty dental chews that help reduce tartar buildup and freshen breath for small breed dogs. Pack of 30.",
+        "imageUrl": "/images/products/default-product.jpg",
+        "stock": 100
+    },
+    {
+        "id": "prod010",
+        "name": "Organic Catnip Treats",
+        "category": "Treats",
+        "price": "₦2,500",
+        "description": "Irresistible catnip-infused treats made with organic ingredients. Perfect for training or rewarding your feline friend.",
+        "imageUrl": "/images/products/default-product.jpg",
+        "stock": 80
+    },
+    {
+        "id": "prod011",
+        "name": "Bird Seed Mix (Tropical Blend)",
+        "category": "Food",
+        "price": "₦5,200",
+        "description": "A premium blend of seeds, nuts, and dried fruits for tropical birds. 1kg pack.",
+        "imageUrl": "/images/products/default-product.jpg",
+        "stock": 20
+    },
+    {
+        "id": "prod012",
+        "name": "Flea & Tick Prevention Spray",
+        "category": "Grooming",
+        "price": "₦7,000",
+        "description": "Effective and safe flea and tick prevention spray for dogs and cats. Provides up to 30 days of protection. 250ml.",
+        "imageUrl": "/images/products/default-product.jpg",
+        "stock": 30
+    }
+]

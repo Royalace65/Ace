@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Products - Admin - Greendot Veterinary Consult</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Main stylesheet -->
+    <!-- <link rel="stylesheet" href="/css/admin.css"> --> <!-- Optional: dedicated admin stylesheet -->
+    <style>
+        /* Quick Admin Table Styles (can be moved to admin.css) */
+        .admin-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        .admin-table th, .admin-table td {
+            border: 1px solid var(--medium-gray);
+            padding: 8px 12px;
+            text-align: left;
+        }
+        .admin-table th {
+            background-color: var(--light-green);
+            color: var(--dark-green);
+        }
+        .admin-table td .btn {
+            margin-right: 5px;
+            padding: 5px 10px;
+            font-size: 0.9rem;
+        }
+        .product-image-thumbnail {
+            max-width: 60px;
+            max-height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        #editProductFormContainer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid var(--medium-gray);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-logo">Greendot Vet Consult (Admin)</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">View Site</a></li>
+                    <li class="nav-item"><a href="admin.html" class="nav-link">Admin Dashboard</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Manage Products</h1>
+
+        <section id="addProductSection" class="content-section">
+            <h2>Add New Product / Edit Product</h2>
+            <form id="productForm">
+                <input type="hidden" id="productId" name="productId"> <!-- For editing -->
+                <div>
+                    <label for="productName">Product Name:</label>
+                    <input type="text" id="productName" name="productName" required>
+                </div>
+                <div>
+                    <label for="productCategory">Category:</label>
+                    <select id="productCategory" name="productCategory" required>
+                        <option value="">Select Category</option>
+                        <option value="Food">Food</option>
+                        <option value="Accessories">Accessories</option>
+                        <option value="Grooming">Grooming</option>
+                        <option value="Treats">Treats</option>
+                        <option value="Medication">Medication (OTC)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="productPrice">Price (e.g., ₦5000):</label>
+                    <input type="text" id="productPrice" name="productPrice" required>
+                </div>
+                <div>
+                    <label for="productStock">Stock Quantity:</label>
+                    <input type="number" id="productStock" name="productStock" required min="0">
+                </div>
+                <div>
+                    <label for="productImageUrl">Image URL (e.g., /images/products/my-product.jpg):</label>
+                    <input type="text" id="productImageUrl" name="productImageUrl">
+                    <small>If blank, uses default placeholder: /images/products/default-product.jpg</small>
+                </div>
+                <div>
+                    <label for="productDescription">Description:</label>
+                    <textarea id="productDescription" name="productDescription" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Save Product</button>
+                <button type="button" id="clearProductForm" class="btn btn-secondary" style="display:none;">Cancel Edit</button>
+                 <div class="form-message" style="margin-top:15px;"></div> <!-- For displaying success/error messages -->
+            </form>
+        </section>
+
+        <section id="existingProductsSection" class="content-section">
+            <h2>Existing Products</h2>
+            <div id="existingProductsTableContainer">
+                <!-- Product table will be rendered here by admin.js -->
+                <p class="loading-message">Loading products...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Greendot Veterinary Consult - Admin Panel</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script> <!-- For basic nav, year, etc. -->
+    <script src="/js/admin.js"></script>
+</body>
+</html>

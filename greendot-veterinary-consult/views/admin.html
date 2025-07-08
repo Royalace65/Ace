@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Greendot Veterinary Consult</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Main stylesheet -->
+    <!-- <link rel="stylesheet" href="/css/admin.css"> --> <!-- Optional: dedicated admin stylesheet -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-logo">Greendot Vet Consult (Admin)</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">View Site</a></li>
+                    <!-- Admin specific nav items can be added here by admin.js if needed -->
+                </ul>
+                <div class="hamburger"> <!-- Re-use if needed, or simplify admin nav -->
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Admin Dashboard</h1>
+        <p>Welcome, Admin! From here you can manage various aspects of the website.</p>
+
+        <section id="admin-navigation" class="content-section">
+            <h2>Management Sections</h2>
+            <ul class="admin-links">
+                <li><a href="admin-products.html" class="btn btn-primary">Manage Products</a></li>
+                <li><a href="#" class="btn btn-secondary disabled-link">Manage Blog Posts (Coming Soon)</a></li>
+                <!-- Add more admin section links here as they are developed -->
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Greendot Veterinary Consult - Admin Panel</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script> <!-- For basic nav, year, etc. -->
+    <script src="/js/admin.js"></script> <!-- Dedicated admin JS file -->
+</body>
+</html>

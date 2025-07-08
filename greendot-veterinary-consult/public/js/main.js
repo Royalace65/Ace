@@ -280,30 +280,41 @@ document.addEventListener('DOMContentLoaded', function() {
                     e.preventDefault();
                     localStorage.removeItem('authToken');
                     localStorage.removeItem('greendotUser');
-                    updateAuthUI(false);
+                    updateAuthUI(false); // This will also remove admin link
 
                     const globalMessageArea = document.getElementById('global-message-area');
                     if (globalMessageArea) {
-                        // Use a variation of displayFormMessage or set manually
                         globalMessageArea.innerHTML = `<div class="form-message success-message">You have been logged out.</div>`;
-                        setTimeout(() => { globalMessageArea.innerHTML = ''; }, 3000); // Clear after 3s
+                        setTimeout(() => { globalMessageArea.innerHTML = ''; }, 3000);
                     } else {
-                        alert('You have been logged out.'); // Fallback
+                        alert('You have been logged out.');
                     }
-
-                    // Check if on a page that requires auth, if so redirect to login
-                    // For now, just update UI. Can redirect to home.
                     window.location.href = 'index.html';
                 });
             }
 
+            // Add Admin Dashboard link if user is admin
+            if (userData.role === 'admin') {
+                const adminLinkLi = document.createElement('li');
+                adminLinkLi.classList.add('nav-item', 'admin-link-nav');
+                adminLinkLi.innerHTML = '<a href="admin.html" class="nav-link">Admin Dashboard</a>';
+                // Insert it before logout, or at a specific position
+                if (logoutLi && navMenuUl) {
+                    navMenuUl.insertBefore(adminLinkLi, logoutLi);
+                } else if (navMenuUl) {
+                    navMenuUl.appendChild(adminLinkLi);
+                }
+            }
+
         } else { // Logged out state
-            authLinks.forEach(link => link.style.display = 'list-item'); // Show Login/Signup LIs
+            authLinks.forEach(link => link.style.display = 'list-item');
 
             const userInfoNav = navMenuUl.querySelector('.user-info-nav');
             if (userInfoNav) userInfoNav.remove();
             const logoutLinkNav = navMenuUl.querySelector('.logout-link-nav');
             if (logoutLinkNav) logoutLinkNav.remove();
+            const adminLinkNav = navMenuUl.querySelector('.admin-link-nav'); // Also remove admin link on logout
+            if (adminLinkNav) adminLinkNav.remove();
         }
     }
 

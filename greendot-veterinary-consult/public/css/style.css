@@ -55,6 +55,27 @@ a {
     text-decoration: none;
 }
 
+/* Admin page specific styles */
+.admin-links {
+    list-style: none;
+    padding-left: 0;
+}
+.admin-links li {
+    margin-bottom: 15px;
+}
+.disabled-link {
+    background-color: var(--light-gray) !important;
+    color: var(--dark-gray) !important;
+    border-color: var(--medium-gray) !important;
+    cursor: not-allowed !important;
+    text-decoration: none !important;
+}
+.disabled-link:hover {
+    /* Keep styles same as normal disabled state */
+    background-color: var(--light-gray) !important;
+    color: var(--dark-gray) !important;
+    border-color: var(--medium-gray) !important;
+}
 a:hover {
     color: var(--dark-green);
     text-decoration: underline;
